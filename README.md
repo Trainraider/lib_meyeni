@@ -17,6 +17,8 @@ The Falloff node is meant to be connected into the scale input of the displaceme
 It will gently lower the displacement scale to 0 as it approaches in proximity,
 the edges of the mesh supplied to the "target" input of the falloff node. Generally you would supply
 a simple mesh with few edges to the falloff node, and the same mesh but subdivided to the displacement node.
+This node is usefull for applying textures to parts of 3d prints where the texture could otherwise create problematic geometry or interfere with pieces
+fitting together properly if geometry past the edge is affected.
 
 * Higher strength makes the falloff more sudden
 * Factor controls the amount of falloff. At <1, the edges will still receive some amount of displacement.
